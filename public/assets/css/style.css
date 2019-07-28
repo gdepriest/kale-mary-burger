@@ -1,26 +1,55 @@
+.jumbotron {
+  background-color: burlywood !important;
+}
+
+body {
+  background-color: rgb(245, 226, 201);
+}
+
 h1 {
   font-family: 'Cherry Cream Soda', cursive !important;
   font-size: 68px !important;
+  color: rgb(51, 25, 25) !important;
 }
 
 h2 {
   font-family: 'Cherry Cream Soda', cursive !important;
+  color: rgb(51, 25, 25) !important;
+
 }
 
 #orderStation {
   margin-bottom: 30px;
 }
 
-li {
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  padding: 5px;
-  margin: 5px;
-  background: whitesmoke;
+#order {
+  color: burlywood;
+  background-color:  rgb(51, 25, 25) !important;
 }
 
-.label {
-  font-weight: bold;
+.delete-burger {
+  color: rgb(245, 226, 201);
+  background-color:  rgb(51, 25, 25) !important;
+}
+
+.change-devoured {
+  color: rgb(245, 226, 201);
+  background-color:  rgb(51, 25, 25) !important;
+
+}
+li {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: bold !important;
+  color: rgb(51, 25, 25) !important;
+  padding: 15px;
+  margin: 5px;
+  background-color: burlywood !important;
+  border-radius: 12px !important;
+}
+
+label {
+  font-weight: bold !important;
 }
 
 .create-form {
@@ -30,6 +59,8 @@ li {
 .form-group {
   margin-bottom: 5px;
   font-family: 'Raleway', sans-serif;
+  color: rgb(51, 25, 25) !important;
+
   font-size: 18px;
 }
 
@@ -37,9 +68,9 @@ li {
   max-width: 300px;
 }
 
-#dvrd {
-  color: gray;
-}
+
+
+
 
 
 

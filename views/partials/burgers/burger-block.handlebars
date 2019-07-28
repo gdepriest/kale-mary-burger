@@ -2,14 +2,17 @@
 	{{name}}
 
 	{{#unless devoured}}
-		<button id="devour"class="change-devoured" data-id="{{id}}" data-newDevoured="{{devoured}}">
+		<button id="devour"class="btn-md change-devoured" data-id="{{id}}" data-newDevoured="{{devoured}}">
+			<span class="fas fa-teeth-open"></span>
+
 			{{#unless devoured }}EAT ME!{{else}}{{/unless}}
 		</button>
 
 	{{/unless}}
 
 
-	<button class="delete-burger" data-id="{{id}}">
+	<button class="btn-md delete-burger" data-id="{{id}}">
+		<span class="fas fa-backspace"></span>
 		{{#unless devoured }}CANCEL ORDER {{else}}DELETE{{/unless}}
 	</button>
 
