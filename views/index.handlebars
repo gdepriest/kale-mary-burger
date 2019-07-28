@@ -1,38 +1,61 @@
-<h1>Burgers</h1>
+<div class="jumbotron text-center">
+  <img src="https://storage.needpix.com/rsynced_images/burger-2026802_1280.png" class="img-fluid" id="burgerPic"alt="burger">
+  <h1>Between Two Puns Burgers</h1>
+</div>
 
-<h2>Orders up!</h2>
+<div class="container">
 
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devoured=false}}
-    {{/unless}}
-  {{/each}}
-</ul>
+  <div id="orderStation" class="text-center">
+    <div class="header">
+      <h2>Order Your Burger!</h2>
+    </div> 
 
-<h2>Devoured Burgers</h2>
+    <form class="create-form text-center">
 
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devoured=true}}
-    {{/if}}
-  {{/each}}
-</ul>
+      <div class="form-group">
+        <label for="ca">Burger Name:</label>
+        <input type="text" id="ca" name="name">
+      </div>
 
-<h2>Add a Burger!</h2>
-<form class="create-form">
+      <button class="btn-lg" id="order" type="submit"><span class="fas fa-hamburger"></span></button>
 
-  <div class="form-group">
-    <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
+    </form>
+
   </div>
 
-  {{!-- <div class="form-group">
-    <label for="devoured">Eaten?</label><br>
-    <input type="radio" name="devoured" value="1"> Devoured!<br>
-    <input type="radio" name="devoured" value="0" checked> Not yet eaten.
-  </div> --}}
+  <div class="row">
+    <div class="col-md-6">
 
-  <button type="submit">Add Burger</button>
-</form>
+      <h2>Orders up!</h2>
+
+      <ul>
+        {{#each burgers}}
+          {{#unless devoured}}
+            {{> burgers/burger-block devoured=false}}
+          {{/unless}}
+        {{/each}}
+      </ul>
+
+    </div>
+
+    <div class="col-md-6">
+      <h2>Devoured Burgers</h2>
+
+      <ul id="dvrd">
+        {{#each burgers}}
+          {{#if devoured}}
+            {{> burgers/burger-block devoured=true}}
+          {{/if}}
+        {{/each}}
+      </ul>
+
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+

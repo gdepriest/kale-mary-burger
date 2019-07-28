@@ -19,6 +19,7 @@ $(function() {
         location.reload();
       }
     );
+    location.reload();
   });
 
   $(".create-form").on("submit", function(event) {

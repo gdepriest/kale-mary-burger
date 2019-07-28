@@ -1,19 +1,47 @@
+h1 {
+  font-family: 'Cherry Cream Soda', cursive !important;
+  font-size: 68px !important;
+}
+
+h2 {
+  font-family: 'Cherry Cream Soda', cursive !important;
+}
+
+#orderStation {
+  margin-bottom: 30px;
+}
+
 li {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+  background: whitesmoke;
 }
 
 .label {
   font-weight: bold;
 }
 
-.create-update-form {
-  padding: 5px;
-  margin: 5px;
-  background: aqua;
+.create-form {
+  margin-top: 15px;
 }
 
 .form-group {
   margin-bottom: 5px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
 }
+
+#burgerPic {
+  max-width: 300px;
+}
+
+#dvrd {
+  color: gray;
+}
+
+
+
+/* font-family: 'Cherry Cream Soda', cursive;
+font-family: 'Raleway', sans-serif; */
