@@ -89,10 +89,7 @@ var orm = {
     });
   },
   delete: function(table, condition, cb) {
-    var queryString = "DELETE FROM " + table;
-
-    queryString += " WHERE ";
-    queryString += condition;
+    var queryString = "DELETE FROM " + table + " WHERE " + condition;
 
     console.log(queryString);
     connection.query(queryString, function(err, result) {
@@ -102,6 +99,7 @@ var orm = {
 
       cb(result);
     });
+
   }
 };
 

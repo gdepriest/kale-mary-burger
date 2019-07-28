@@ -1,2 +1,3 @@
-INSERT INTO burgers (name) VALUES ('A Good Manchego is Hard to Find Burger');
-INSERT INTO burgers (name) VALUES ('Give Em Something Shiitake Bout Burger');
+USE burgers_db;
+INSERT INTO burgers (name, devoured) VALUES ('A Good Manchego is Hard to Find Burger', false);
+INSERT INTO burgers (name, devoured) VALUES ('Give Em Something Shiitake Bout Burger', false);
